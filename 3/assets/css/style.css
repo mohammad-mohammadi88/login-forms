@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body,
+html {
+  font-weight: 500;
+  position: relative;
+  height: 100vh;
+  background-color: #efefef;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.project-title {
+  background: linear-gradient(to right, blue, #ff00c3);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 10rem 0;
+  font-weight: 900;
+}
+
+.container {
+  max-width: 470px;
+  margin: 0 auto;
+  position: relative;
+}
+.container form .back-part {
+  width: 350px;
+  height: 500px;
+  border-radius: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fbfbfb;
+  position: absolute;
+}
+.container form div.form-inner {
+  position: absolute;
+  box-shadow: 0 0 7px 0 #ccc;
+  width: 370px;
+  height: 500px;
+  transform: translate(-50%, 10px);
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 16px;
+  left: 50%;
+}
+.container form div.form-inner h1 {
+  font-size: 2.5rem;
+  padding: 20px;
+  color: #ed2553;
+  position: relative;
+  margin-top: 1rem;
+}
+.container form div.form-inner h1::before {
+  position: absolute;
+  background-color: #ed2553;
+  height: 70px;
+  width: 4px;
+  top: 8px;
+  right: -16px;
+  content: "";
+}
+.container form div.form-inner i.fa-pencil {
+  position: absolute;
+  font-size: 2.2rem;
+  left: -50px;
+  top: 30px;
+  width: 110px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background-color: #ed2553;
+}
+.container form div.form-inner div.input {
+  position: relative;
+  margin-top: 3rem;
+}
+.container form div.form-inner div.input input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  width: 85%;
+  margin: 0 15px;
+  background-color: transparent;
+}
+.container form div.form-inner div.input input:placeholder-shown ~ label {
+  bottom: 10px;
+}
+.container form div.form-inner div.input input:valid ~ i {
+  width: 85%;
+  transition: 0.4s ease;
+}
+.container form div.form-inner div.input input:focus {
+  border-bottom: 3px solid #c1c1c1;
+  transition: 0.15s ease;
+}
+.container form div.form-inner div.input input:focus ~ label {
+  bottom: 48px;
+  transition: 0.4s ease;
+}
+.container form div.form-inner div.input label {
+  position: absolute;
+  right: 16px;
+  font-size: 20px;
+  color: #696969;
+  bottom: 48px;
+}
+.container form div.form-inner div.input i {
+  position: absolute;
+  bottom: 0px;
+  right: 47%;
+  transform: translateX(50%);
+  height: 3px;
+  width: 0;
+  background-color: #ed2553;
+}
+.container form div.form-inner button {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 2rem auto;
+  background-color: #fff;
+  border: 1px solid #ed2553;
+  padding: 16px;
+  color: #ed2553;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.container form div.form-inner button:hover {
+  transition: 0.4s ease;
+  background-color: #ed2553;
+  color: #fff;
+}
+.container form div.form-inner a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+.container .register {
+  width: 100%;
+}
+.container .register .register-form {
+  z-index: 0;
+}
+.container .register .register-form .form-inner {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  left: 55px;
+  top: 30px;
+  background-color: #ed2553;
+  display: none;
+  opacity: 0;
+}
+.container .register .register-form .form-inner .register-head {
+  display: flex;
+  justify-content: space-between;
+}
+.container .register .register-form .form-inner .register-head span {
+  font-size: 2.5rem;
+  padding: 20px;
+  color: #ed2553;
+  position: relative;
+  margin-top: 1rem;
+  color: #fff;
+}
+.container .register .register-form .form-inner .register-head span::before {
+  position: absolute;
+  background-color: #fff;
+  height: 70px;
+  width: 4px;
+  top: 8px;
+  right: -16px;
+  content: "";
+}
+.container .register .register-form .form-inner .register-head i {
+  font-size: 3rem;
+  color: #fff;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.container .register .register-form .form-inner .input input {
+  color: #fff !important;
+}
+.container .register .register-form .form-inner .input input:focus {
+  border-bottom: 3px solid #e0e0e0;
+}
+.container .register .register-form .form-inner .input input:valid {
+  border-bottom: 3px solid #fff;
+  transition: 0.15s ease;
+}
+.container .register .register-form .form-inner .input label {
+  color: #fff;
+}
+.container .register .register-form .form-inner button {
+  width: 80%;
+  height: 70px;
+  padding: 16px;
+}
+.container .register .register-form .form-inner button:hover {
+  background-color: #ffecec;
+  color: #ed2553;
+}
