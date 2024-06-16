@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body,
+html {
+  font-weight: 500;
+  position: relative;
+}
+
+.project-title {
+  background: -webkit-gradient(linear, left top, right top, from(blue), color-stop(aqua), color-stop(#ff00c3), to(red));
+  background: linear-gradient(to right, blue, aqua, #ff00c3, red);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10rem 0;
+}
+
+.container {
+  max-width: 600px;
+  background-color: #3a6060;
+  margin: 0 auto;
+  height: 370px;
+  border-radius: 5px;
+}
+.container h1 {
+  color: #fff;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+.container form {
+  padding: 16px;
+}
+.container form .inputs {
+  position: relative;
+  margin-bottom: 26px;
+  text-align: right;
+}
+.container form .inputs input {
+  width: 100%;
+  border: none;
+  outline: 0;
+  height: 40px;
+  font-size: 18px;
+  background-color: #3a6060;
+  border-bottom: 2px solid #444;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #fff;
+}
+.container form .inputs input:focus {
+  border-bottom: 2px solid #c7c7c7;
+}
+.container form .inputs input:focus + label {
+  bottom: 38px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  position: absolute;
+  width: 70px;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: right;
+  color: #fff;
+}
+.container form .inputs input:valid {
+  background-color: #3a6060;
+  border-bottom: 2px solid #c7c7c7;
+}
+.container form .inputs input:valid ~ label {
+  color: #fff;
+}
+.container form .inputs input:-moz-placeholder-shown ~ label {
+  bottom: 4px;
+  right: 0px;
+  position: absolute;
+}
+.container form .inputs input:-ms-input-placeholder ~ label {
+  bottom: 4px;
+  right: 0px;
+  position: absolute;
+}
+.container form .inputs input:placeholder-shown ~ label {
+  bottom: 4px;
+  right: 0px;
+  position: absolute;
+}
+.container form .inputs input:focus ~ label {
+  bottom: 30px;
+  color: #fff;
+}
+.container form .inputs label {
+  position: absolute;
+  width: 70px;
+  right: 0;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: right;
+  color: #d0d0d0;
+  bottom: 30px;
+}
+.container form .inputs button {
+  background-color: #008000;
+  outline: 0;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  padding: 10px 16px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.container form .inputs button:hover {
+  background-color: #005500;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.container form #pass i {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  color: #00ff42;
+}
+.container form #pass i.fa-eye {
+  display: none;
+  padding: 0 1px;
+}/*# sourceMappingURL=style.css.map */
