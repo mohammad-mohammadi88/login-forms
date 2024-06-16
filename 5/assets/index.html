@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>project-5</title>
+    
+</head>
+<body>
+    <div class="project-title">پروژه شماره 5</div>
+    <form action="">
+       <div class="container">
+        <h1>login</h1>
+        <div class="input user">
+            <input type="text" name="userName" pattern="[a-zA-Z0-9]{4,}" id="userName" placeholder="username" required autofocus>
+            <i class="fa fa-user" style="right: 13px;"></i>
+        </div>
+        <div class="input password">
+            <input type="password" placeholder="password" name="password" pattern="[a-zA-Z0-9]{4,}" id="password" required>
+            <i class="far fa-eye"></i>
+            <i class="far fa-eye-slash"></i>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">remember me</label>
+        </div>
+        <button type="submit" id="submit">login</button>
+        <p>Did you forget your password?<a href="">forgot password</a></p>
+        
+       </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

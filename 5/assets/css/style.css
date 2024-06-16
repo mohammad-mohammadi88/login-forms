@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body,
+html {
+  font-weight: 500;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-image: url(../img/login-bg.png);
+}
+
+.project-title {
+  background: -webkit-gradient(linear, left top, right top, from(blue), to(#ff00c3));
+  background: linear-gradient(to right, blue, #ff00c3);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10rem 0;
+  font-weight: 900;
+}
+
+form {
+  height: auto;
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 32px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  margin: 0 auto;
+}
+form h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+form .input {
+  position: relative;
+  margin-bottom: 20px;
+}
+form .input input {
+  height: 45px;
+  background-color: transparent;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+  padding: 16px;
+  border: 1px solid #fff;
+  border-radius: 600px;
+  width: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+form .input input:valid {
+  border: 2px solid #0f0;
+}
+form .input input::-webkit-input-placeholder {
+  color: #fff;
+}
+form .input input::-moz-placeholder {
+  color: #fff;
+}
+form .input input:-ms-input-placeholder {
+  color: #fff;
+}
+form .input input::-ms-input-placeholder {
+  color: #fff;
+}
+form .input input::placeholder {
+  color: #fff;
+}
+form .input i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+  color: #fff;
+}
+form .input i.fa-eye {
+  display: none;
+  padding: 0 1px;
+}
+form .checkbox {
+  font-size: 18px;
+  color: #fff;
+}
+form .checkbox input {
+  margin: 0 2px;
+}
+form .checkbox label {
+  cursor: pointer;
+}
+form button {
+  background-color: #fff;
+  border-radius: 400px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin: 16px 0;
+  padding: 16px;
+  font-size: 18px;
+  cursor: pointer;
+}
+form button:hover {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+form p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+form p a {
+  color: rgba(255, 255, 255, 0.8274509804);
+}
+form p a:active {
+  color: lightblue;
+}/*# sourceMappingURL=style.css.map */
