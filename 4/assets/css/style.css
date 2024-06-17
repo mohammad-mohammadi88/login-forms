@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: cursive;
+}
+
+body,
+html {
+  font-weight: 500;
+  position: relative;
+  background-image: url(../img/login-bg.png);
+}
+
+.project-title {
+  background: linear-gradient(to right, blue, aqua, #ff00c3, red);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 10rem 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  height: 400px;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 10px;
+}
+.container div.form {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container div.form div.right {
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  z-index: 2;
+  top: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  border-radius: 30px 10px 10px 30px;
+  background: linear-gradient(to right top, rgb(255, 42, 0), rgb(255, 111, 0));
+}
+.container div.form div.right button {
+  width: 130px;
+  margin-top: 32px;
+  padding: 4px 0;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 6px;
+  outline: none;
+  font-size: 18px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.container div.form div.right button:hover {
+  background-color: rgb(208, 38, 0);
+  transition: 0.4s ease;
+}
+.container div.form div.right button[id*=button1] {
+  display: none;
+}
+.container div.form div.right p {
+  font-weight: 600;
+  margin-top: 20px;
+}
+.container div.form div.right .hide {
+  display: none;
+}
+.container div.form .border-radius {
+  transition: 0.3s;
+  border-radius: 10px 30px 30px 10px !important;
+}
+.container div.form div.left {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  background-color: #fff;
+}
+.container div.form div.left h3 {
+  text-align: center;
+}
+.container div.form div.left .head {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 16px;
+}
+.container div.form div.left .head i {
+  font-size: 18px;
+  border: 1px solid #4b4b4b;
+  border-radius: 50%;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+.container div.form div.left .head i:hover {
+  background-color: #c1c1c1;
+  transition: 0.3s ease;
+}
+.container div.form div.left span {
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  margin: 16px 0;
+}
+.container div.form div.left form.register-form {
+  display: none;
+}
+.container div.form div.left .form-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 220px;
+  width: 80%;
+  margin: 0 auto;
+}
+.container div.form div.left .form-inner input {
+  border: none;
+  direction: rtl;
+  outline: none;
+  height: 40px;
+  padding: 5px;
+  font-size: 18px;
+  background-color: #c1c1c1;
+  max-width: 100%;
+}
+.container div.form div.left .form-inner a {
+  text-decoration: none;
+  color: blue;
+  text-align: center;
+  font-size: 18px;
+}
+.container div.form div.left .form-inner button {
+  width: 120px;
+  height: 35px;
+  background-color: #008000;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 16px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 567px) {
+  .container {
+    height: 800px;
+  }
+  .container .form {
+    height: 100%;
+  }
+  .container .form div.right {
+    width: 100% !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: auto;
+    height: 50% !important;
+    border-radius: 10px !important;
+  }
+  .container .form div.right button[id*=button1] {
+    display: block !important;
+    margin: 32px auto 0;
+  }
+  .container .form div.right button[type=button] {
+    display: none;
+  }
+  .container .form div.left {
+    width: 100% !important;
+    right: 0 !important;
+    left: 0 !important;
+    transform: translateY(100%);
+    bottom: auto;
+    height: 50% !important;
+  }
+}
